@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>شاورميكر | SHAWRMAKER – شفا بدران، عمّان</title>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light dark;--bg:#f5efe2;--ink:#17120c;--card:#fffaf0;--gold:#a8700c;--g:#d99a2b;--line:rgba(23,18,12,.2);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0907;--ink:#f3e9d6;--card:#16120d;--gold:#e0a63a;--line:rgba(243,233,214,.2)}}
+:root[data-theme="dark"]{--bg:#0b0907;--ink:#f3e9d6;--card:#16120d;--gold:#e0a63a;--line:rgba(243,233,214,.2)}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,sans-serif;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.d{font-family:Lalezar,Cairo,sans-serif;font-weight:400}
+.brush{display:inline-block;background:var(--g);color:#120d07;padding:.05em 1.1em;clip-path:polygon(0 14%,4% 0,12% 9%,22% 0,35% 11%,50% 0,64% 9%,78% 0,90% 10%,100% 0,97% 55%,100% 100%,88% 90%,72% 100%,56% 92%,40% 100%,24% 91%,10% 100%,0 88%,3% 50%)}
+.hero{background:radial-gradient(ellipse at 50% 30%,#2b1d0c 0,#0b0907 68%);color:#f3e9d6;text-align:center;padding:60px 5% 84px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:14px;background:repeating-linear-gradient(90deg,var(--g) 0 26px,transparent 26px 38px)}
+.crown{width:92px;margin:0 auto 4px;color:#d99a2b}
+.hero h1{font-size:clamp(3.4rem,17vw,8rem);line-height:1;letter-spacing:.04em;color:#d99a2b;text-shadow:0 5px 0 #4a3008,0 18px 40px rgba(0,0,0,.7);direction:ltr}
+.try{letter-spacing:.38em;font-size:.85rem;margin-top:4px;direction:ltr}
+.slogan{font-size:clamp(1.8rem,7vw,3rem);margin-top:20px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.btn{padding:13px 30px;font-weight:800;background:#d99a2b;color:#120d07;border:2px solid #d99a2b;box-shadow:4px 4px 0 #000}
+.btn.o{background:transparent;color:#d99a2b}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #000}
+.btn:focus-visible,.tabs button:focus-visible,a:focus-visible{outline:3px solid #d99a2b;outline-offset:3px}
+section{padding:56px 5%}
+.w{max-width:860px;margin:0 auto}
+h2{text-align:center;font-size:clamp(1.8rem,6vw,2.6rem);margin-bottom:24px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 16px;justify-content:safe center;scrollbar-width:none}
+.tabs button{flex:none;font:inherit;font-weight:800;padding:8px 20px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--g);border-color:var(--g);color:#120d07;box-shadow:3px 3px 0 #000}
+.menu{background:var(--card);border:1px solid var(--line);padding:6px 20px}
+.it{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px dashed var(--line)}
+.it:last-child{border:0}
+.it b{font-size:1.1rem}
+.it small{display:block;font-size:.85rem;opacity:.75;line-height:1.5;max-width:520px}
+.it .p{font-family:Lalezar,Cairo;font-size:1.45rem;color:var(--gold);white-space:nowrap;text-align:left}
+.note{text-align:center;font-size:.86rem;opacity:.7;margin-top:10px}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;text-align:center}
+.info div{background:var(--card);border:1px solid var(--line);padding:22px}
+.info h3{font-size:1.5rem;color:var(--gold)}
+footer{background:#0b0907;color:#f3e9d6;text-align:center;padding:30px 5% 92px;font-size:.9rem}
+.bar{position:fixed;inset:auto 0 0 0;z-index:9;display:flex;background:#0b0907;border-top:2px solid #d99a2b;padding-bottom:env(safe-area-inset-bottom,0px)}
+.bar a{flex:1;text-align:center;padding:13px 4px;font-weight:800;color:#d99a2b}
+@media(min-width:760px){.bar{display:none}footer{padding-bottom:30px}}
+</style>
+</head>
+<body>
+<header class="hero">
+<svg class="crown" viewBox="0 0 100 70" fill="currentColor" aria-hidden="true"><rect x="40" y="2" width="20" height="40" rx="9"/><path d="M8 40c10-12 24-8 32 4v14C26 56 12 52 8 40zm84 0c-10-12-24-8-32 4v14c14-2 28 2 32-18z"/></svg>
+<h1 class="d">SHAWRMAKER</h1>
+<div class="try">TRY THE BEST</div>
+<p class="slogan d">سرها بخلطتها !!</p>
+<div class="cta"><a class="btn" href="tel:0799900445">اطلب الآن: 0799900445</a><a class="btn o" href="#menu">شوف المنيو</a></div>
+</header>
+
+<section id="menu"><div class="w">
+<h2 class="d"><span class="brush">قائمة الأسعار</span></h2>
+<div class="tabs" id="tabs" role="tablist"></div>
+<div class="menu" id="list"></div>
+<p class="note">الأسعار بالدينار الأردني</p></div></section>
+
+<section><div class="w"><h2 class="d"><span class="brush">وينّا</span></h2>
+<div class="info">
+<div><h3 class="d">الموقع</h3><p>شفا بدران، شارع العرب<br>مقابل سامح مول</p></div>
+<div><h3 class="d">للطلب</h3><p dir="ltr">07 9990 0445</p></div>
+<div><h3 class="d">تابعنا</h3><p><a href="https://instagram.com/shawrmaker" target="_blank" rel="noopener">@shawrmaker</a></p></div>
+</div></div></section>
+
+<footer><b class="d" style="font-size:1.4rem;color:#d99a2b">SHAWRMAKER</b><br><span style="opacity:.6">تصميم تجريبي</span></footer>
+<div class="bar"><a href="tel:0799900445">اتصال</a><a href="https://wa.me/962799900445">واتساب</a><a href="#menu">المنيو</a></div>
+
+<script>
+const D={
+"وجبات شاورما":[["وجبة شاورما ميشن","دبل 3.50 · تربل 4.50"],["وجبة شاورما عادي","2.15"],["وجبة شاورما سوبر","2.75"],["وجبة شاورما دبل","3.40"],["وجبة شاورما تربل","4.50"],["وجبة شاورما إيطالي","3.50"],["وجبة شاورما ميكر","3.75"],["وجبة شاورما حار حلو","2.85"]],
+"سندويشات":[["شاورما صغير","0.70"],["شاورما كبير","1.25"],["شاورما فرنسي","1.30"],["ساندوش RPG","3.25"],["ساندوش ميكر","1.40"],["الفريدو","1.75"],["فاهيتا","1.75"],["باربكيو","1.75"],["إيطاليانو","1.75"],["مكسيكي","1.75"],["زنجر","1.75"],["زنجر سبشل","2.00"]],
+"وجبات عائلية":[["وجبة منسف شاورما عائلي","14.00","8 ساندويشات شاورما كبير (800 غم)، 2 كولسلو، 2 ثومة، 2 مخلل خضار، 2 بطاطا، جبنة شدر، 6 علب مشروب غازي"],["الوجبة العائلية","9.00","5 ساندويشات شاورما كبير (500 غم)، كولسلو، ثومة، مخلل خضار، بطاطا، جبنة شدر، 3 علب مشروب غازي"]],
+"بروستد وبرغر":[["وجبة 4 قطع بروستد","3.65","خبز، مقبلات، بطاطا، مشروب غازي"],["وجبة 8 قطع بروستد","7.25","خبز، مقبلات، بطاطا، مشروب غازي"],["وجبة 16 قطعة بروستد","14.00","خبز، مقبلات، بطاطا، مشروب غازي"],["سنجل برغر · جديد","1.75"],["دبل برغر · جديد","3.00"]]};
+const T=document.getElementById('tabs'),L=document.getElementById('list');
+function show(k){[...T.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));
+L.innerHTML=D[k].map(r=>`<div class="it"><div><b>${r[0]}</b>${r[2]?`<small>${r[2]}</small>`:''}</div><span class="p">${r[1]}</span></div>`).join('')+(k==="وجبات شاورما"?'<div class="it"><div><b>اجعلها وجبة</b><small>بطاطا مع جبنة شدر ومشروب غازي</small></div><span class="p">+1.25</span></div>':'')}
+Object.keys(D).forEach(k=>{const b=document.createElement('button');b.textContent=k;b.dataset.k=k;b.role='tab';b.onclick=()=>show(k);T.append(b)});
+show(Object.keys(D)[0]);
+</script>
+</body>
+</html>
